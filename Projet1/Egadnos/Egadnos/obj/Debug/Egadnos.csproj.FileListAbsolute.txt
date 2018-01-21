@@ -26,3 +26,7 @@ C:\Users\Mourad ZAMMIT\source\repos\Egadnos\Egadnos\obj\Debug\Egadnos.csprojReso
 C:\Users\Mourad ZAMMIT\source\repos\Egadnos\Egadnos\obj\Debug\Egadnos.csproj.CoreCompileInputs.cache
 C:\Users\Mourad ZAMMIT\source\repos\Egadnos\Egadnos\obj\Debug\Egadnos.dll
 C:\Users\Mourad ZAMMIT\source\repos\Egadnos\Egadnos\obj\Debug\Egadnos.pdb
+C:\Users\Mourad ZAMMIT\Desktop\adai_cci\Maquettage\Livrable 20-12-2017\Projet1\Egadnos\Egadnos\obj\Debug\Egadnos.csprojResolveAssemblyReference.cache
+C:\Users\Mourad ZAMMIT\Desktop\adai_cci\Maquettage\Livrable 20-12-2017\Projet1\Egadnos\Egadnos\obj\Debug\Egadnos.csproj.CoreCompileInputs.cache
+C:\Users\Mourad ZAMMIT\Desktop\adai_cci\Maquettage\Livrable 20-12-2017\Projet1\Egadnos\Egadnos\obj\Debug\Egadnos.dll
+C:\Users\Mourad ZAMMIT\Desktop\adai_cci\Maquettage\Livrable 20-12-2017\Projet1\Egadnos\Egadnos\obj\Debug\Egadnos.pdb

@@ -4,10 +4,10 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using System.Data.SqlClient;
-using MonApplication.Models;
+using Egadnos.Models;
 
 /*/////////////////////////////////////////////////
- * Page ok requete SQL a verifier 
+ * Page requetes SQL a verifier 
  * ///////////////////////////////////////////////*/
 
 

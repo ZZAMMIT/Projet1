@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
-using MonApplication.Models;
+using Egadnos.Models;
 using System.Data.SqlClient;
 
 /*////////////////////////////////////////////////////
@@ -16,8 +16,8 @@ namespace Egadnos.Controllers
     {
         struct CreationSondage
         {
-            public string TitreSondage;
-            public string DescriptifSondage;
+           // public string TitreSondage;
+            //public string DescriptifSondage;
             //public TypeSondage Choix;
         }
 
@@ -29,29 +29,8 @@ namespace Egadnos.Controllers
         // GET: CreationSondage
         public ActionResult Index()
         {
-            CreationSondage sondage = new CreationSondage();
-            Console.WriteLine("Titre sondage");
-            sondage.TitreSondage = Console.ReadLine();
-            Console.WriteLine("Descrption sondage");
-            sondage.DescriptifSondage = Console.ReadLine();
-
-            Console.WriteLine("Type sondage: Multiréponse ? ");
-            string reponse = Console.ReadLine();
-   
-                
-
-            switch(reponse)
-            {
-                case "oui":
-                    Console.WriteLine("Vous avez choisi : " + TypeSondage.ChoixMultiple);
-                    break;
-                case "Non":
-                    Console.WriteLine("Vous avez choisi : " + TypeSondage.ChoixUnique);
-                    break;
-            }
-
-
-            return View();
+       
+            return View("Index");
         }
     }
 }
