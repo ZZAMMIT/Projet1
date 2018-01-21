@@ -6,6 +6,10 @@ using System.Web.Mvc;
 using MonApplication.Models;
 using System.Data.SqlClient;
 
+/*////////////////////////////////////////////////////
+ A modifier remplacement cosole par equival web asp
+///////////////////////////////////////////////////*/
+
 namespace Egadnos.Controllers
 {
     public class CreationSondageController : Controller
