@@ -1,0 +1,220 @@
+/*Marge et police de l'ensemble*/
+body{
+	
+	margin:0;
+	padding:0;
+	font-family: Verdana, Geneva, Sans-serif;
+	font-size:12px;
+}
+
+.droite{
+	text-align:right;
+}
+
+.center{
+	text-align:center;
+	
+	
+}
+
+.gauche{
+	text-align:left;
+}
+
+.menu{
+	width:100%;
+	margin:0 auto;
+	background:#e6f2ff;
+	padding-top:5px;
+	height:5px;
+}
+
+/*\\\\\\\\\\\\\\Tête\\\\\\\\\\\\\\\\\\\\*/
+
+#tete{
+	background:url(Theme/logo.jpg) no-repeat;
+	width:60%;
+	margin: 20px auto;
+}
+
+/*\\\\\\\\\\\\\\Conteneur\\\\\\\\\\\\\\\\\\\\*/
+
+#conteneurIndex{
+	width:65%;
+	margin: 100px auto;
+}
+#conteneur{
+	width:65%;
+	margin: 0 auto;
+}
+/**/
+html, body{
+	height: 100%;
+}
+
+#contenu{
+	min-height: 100%;
+	position: relative;
+}
+
+/*\\\\\\\\\\\\\\Pied\\\\\\\\\\\\\\\\\\\\*/
+
+#pied{
+	width:65%;
+	margin: 0 auto;
+	background:#e6f2ff;
+	position:absolute;
+	bottom:0;
+	padding-top:20px;
+	height:20px;
+}
+
+/*le bouton Index*/
+
+button{
+	background:#0080ff;
+	color: #fff;
+	border: none;
+	border-radius:10px;
+	box-shadow: 8px 8px 22px 6px rgba(0, 0, 0, 0.4);
+	font: monospace;
+	font-size: 3em;
+	outline: none;
+	padding: 20px;
+	cursor: pointer;
+	trasition: 0.2s;
+	margin: 2em;
+}
+
+button:hover{
+	transform: scale(1.01);
+	box-shadow: 8px 8px 27px 6px rgba(0, 0, 0, 0.20);
+}
+
+button:active{
+	transform: scale(0.98);
+	box-shadow: 8px 8px 20px 4px rgba(0, 0, 0, 0.25);
+}
+
+/*le bouton page 2*/
+
+.boutonValider {
+	background:#0080ff;
+	color: #fff;
+	border: none;
+	border-radius:10px;
+	box-shadow: 8px 8px 22px 6px rgba(0, 0, 0, 0.4);
+	font: monospace;
+	font-size: 2em;
+	outline: none;
+	padding: 18px 80px 18px 80px;
+	cursor: pointer;
+	trasition: 0.2s;
+	margin: 2em;
+}
+
+.boutonValider:hover{
+	transform: scale(1.01);
+	box-shadow: 8px 8px 27px 6px rgba(0, 0, 0, 0.20);
+}
+
+.boutonValider:active{
+	transform: scale(0.98);
+	box-shadow: 8px 8px 20px 4px rgba(0, 0, 0, 0.25);
+}
+
+
+/*Personnalisation barre de recherhe*/
+
+#q{
+	margin:0; 
+}
+
+#q input[type=text]{
+	
+	border:0;
+	width:300px;
+	height:34px;
+	border-radius: 6px;
+	background-color:#e6f2ff;
+	color:#888;
+	padding: 0 0 0 10px;
+}
+
+#q input[type=text]:focus{
+	background-position:left bottom;
+}
+
+#q input[type=submit]{
+	
+	border:0;
+	width:30px;
+	height:26px;
+	background-image: url(Theme/loupe_2.png);
+	cursor:pointer;
+}
+	
+#q input[type=submit]:hover{
+	background-position:right bottom;
+}
+
+/*Champs obligatoires
+:required{
+	border: 1px dotted #0080ff;
+}
+*/
+
+#add{
+	width:80%;
+	height: 25px;
+	margin: 0 auto;
+	border: 1px solid black;
+	border-radius: 6px;
+}
+
+#addText{
+	width:80%;
+	height: 80px;
+	margin: 0 auto;
+	border: 1px solid black;
+	border-radius: 6px;
+}
+
+#add1{
+	width:50%;
+	height: 25px;
+	margin: 0 auto;
+	border: 1px solid black;
+	border-radius: 6px;
+}
+
+
+
+textarea {
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+	border: 1px solid black;
+	}
+
+select{
+	 -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+	border: 1px solid black;
+	margin: 10%;
+	width: 40%;
+	color: 
+}
+
+form{
+	margin: auto;
+}
+.rouge{
+	color: red;
+}
+
+
+
+
+
