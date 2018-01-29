@@ -63,10 +63,11 @@ html, body{
 	width:65%;
 	margin: 0 auto;
 	background:#e6f2ff;
-	position:absolute;
+	position:fixed;
 	bottom:0;
 	padding-top:20px;
 	height:20px;
+	
 }
 
 /*le bouton Index*/
@@ -179,7 +180,7 @@ button:active{
 	border: 1px solid black;
 	border-radius: 6px;
 }
-
+/*///////////////////////////////////////////////*/
 #add1{
 	width:50%;
 	height: 25px;
@@ -189,7 +190,7 @@ button:active{
 }
 
 
-
+/*personnalisation textarea*/
 textarea {
     -webkit-border-radius: 6px;
     -moz-border-radius: 6px;
@@ -204,14 +205,31 @@ select{
 	border: 1px solid black;
 	margin: 10%;
 	width: 40%;
-	color: 
+	 
 }
-
+/*////////////////////////////////////////*/
 form{
 	margin: auto;
 }
+/*////////////////////////////////////////*/
 .rouge{
 	color: red;
+}
+/*////////////////////////////////////////*/
+input[type=checkbox]{
+	margin-left:20%;
+}
+/*////////////////////////////////////////*/
+
+input[type=radio]{
+	margin-left:20%;
+}
+/*////////////////////////////////////////*/
+
+table{
+	font-size: 20px;
+	padding:6%;
+	width: 100%
 }
 
 
