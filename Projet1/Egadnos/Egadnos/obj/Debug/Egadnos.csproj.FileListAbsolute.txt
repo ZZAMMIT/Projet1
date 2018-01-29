@@ -84,3 +84,27 @@ C:\Users\adai10\Desktop\Egadnos\Egadnos\bin\fr\System.Web.Webpages.Deployment.re
 C:\Users\adai10\Desktop\Egadnos\Egadnos\bin\fr\System.Web.Webpages.Razor.resources.dll
 C:\Users\adai10\Desktop\Egadnos\Egadnos\bin\fr\System.Web.Helpers.resources.dll
 C:\Users\adai10\Desktop\Egadnos\Egadnos\bin\fr\System.Web.Mvc.resources.dll
+C:\Users\Mourad ZAMMIT\Desktop\adai_cci\Maquettage\Livrable 20-12-2017\Projet1\Egadnos\Egadnos\bin\Egadnos.dll.config
+C:\Users\Mourad ZAMMIT\Desktop\adai_cci\Maquettage\Livrable 20-12-2017\Projet1\Egadnos\Egadnos\bin\Egadnos.dll
+C:\Users\Mourad ZAMMIT\Desktop\adai_cci\Maquettage\Livrable 20-12-2017\Projet1\Egadnos\Egadnos\bin\Egadnos.pdb
+C:\Users\Mourad ZAMMIT\Desktop\adai_cci\Maquettage\Livrable 20-12-2017\Projet1\Egadnos\Egadnos\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Mourad ZAMMIT\Desktop\adai_cci\Maquettage\Livrable 20-12-2017\Projet1\Egadnos\Egadnos\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Mourad ZAMMIT\Desktop\adai_cci\Maquettage\Livrable 20-12-2017\Projet1\Egadnos\Egadnos\bin\System.Web.Helpers.dll
+C:\Users\Mourad ZAMMIT\Desktop\adai_cci\Maquettage\Livrable 20-12-2017\Projet1\Egadnos\Egadnos\bin\System.Web.Mvc.dll
+C:\Users\Mourad ZAMMIT\Desktop\adai_cci\Maquettage\Livrable 20-12-2017\Projet1\Egadnos\Egadnos\bin\System.Web.Razor.dll
+C:\Users\Mourad ZAMMIT\Desktop\adai_cci\Maquettage\Livrable 20-12-2017\Projet1\Egadnos\Egadnos\bin\System.Web.Webpages.Deployment.dll
+C:\Users\Mourad ZAMMIT\Desktop\adai_cci\Maquettage\Livrable 20-12-2017\Projet1\Egadnos\Egadnos\bin\System.Web.Webpages.dll
+C:\Users\Mourad ZAMMIT\Desktop\adai_cci\Maquettage\Livrable 20-12-2017\Projet1\Egadnos\Egadnos\bin\System.Web.Webpages.Razor.dll
+C:\Users\Mourad ZAMMIT\Desktop\adai_cci\Maquettage\Livrable 20-12-2017\Projet1\Egadnos\Egadnos\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Mourad ZAMMIT\Desktop\adai_cci\Maquettage\Livrable 20-12-2017\Projet1\Egadnos\Egadnos\bin\System.Web.Razor.xml
+C:\Users\Mourad ZAMMIT\Desktop\adai_cci\Maquettage\Livrable 20-12-2017\Projet1\Egadnos\Egadnos\bin\System.Web.Webpages.xml
+C:\Users\Mourad ZAMMIT\Desktop\adai_cci\Maquettage\Livrable 20-12-2017\Projet1\Egadnos\Egadnos\bin\System.Web.Webpages.Deployment.xml
+C:\Users\Mourad ZAMMIT\Desktop\adai_cci\Maquettage\Livrable 20-12-2017\Projet1\Egadnos\Egadnos\bin\System.Web.Webpages.Razor.xml
+C:\Users\Mourad ZAMMIT\Desktop\adai_cci\Maquettage\Livrable 20-12-2017\Projet1\Egadnos\Egadnos\bin\System.Web.Helpers.xml
+C:\Users\Mourad ZAMMIT\Desktop\adai_cci\Maquettage\Livrable 20-12-2017\Projet1\Egadnos\Egadnos\bin\System.Web.Mvc.xml
+C:\Users\Mourad ZAMMIT\Desktop\adai_cci\Maquettage\Livrable 20-12-2017\Projet1\Egadnos\Egadnos\bin\fr\System.Web.Razor.resources.dll
+C:\Users\Mourad ZAMMIT\Desktop\adai_cci\Maquettage\Livrable 20-12-2017\Projet1\Egadnos\Egadnos\bin\fr\System.Web.Webpages.resources.dll
+C:\Users\Mourad ZAMMIT\Desktop\adai_cci\Maquettage\Livrable 20-12-2017\Projet1\Egadnos\Egadnos\bin\fr\System.Web.Webpages.Deployment.resources.dll
+C:\Users\Mourad ZAMMIT\Desktop\adai_cci\Maquettage\Livrable 20-12-2017\Projet1\Egadnos\Egadnos\bin\fr\System.Web.Webpages.Razor.resources.dll
+C:\Users\Mourad ZAMMIT\Desktop\adai_cci\Maquettage\Livrable 20-12-2017\Projet1\Egadnos\Egadnos\bin\fr\System.Web.Helpers.resources.dll
+C:\Users\Mourad ZAMMIT\Desktop\adai_cci\Maquettage\Livrable 20-12-2017\Projet1\Egadnos\Egadnos\bin\fr\System.Web.Mvc.resources.dll

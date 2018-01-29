@@ -111,6 +111,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\Questionnaires.cs" />
     <Compile Include="Models\ReponsePossible.cs" />
     <Compile Include="Models\Sondage.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -136,6 +137,7 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Views\CreationSondage\" />
+    <Folder Include="Views\Questionnaire\" />
     <Folder Include="Views\ReponsePossible\" />
     <Folder Include="Views\Sondage\" />
   </ItemGroup>

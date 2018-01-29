@@ -13,29 +13,63 @@ using System.Data.SqlClient;
 namespace Egadnos.Controllers
 {
 
-    /*Insetion éléments dans la BDD table ReponsePossible*/
+    /*Insetion éléments dans la BDD table Sondage*/
     public class CreationSondageController : Controller
     {
         private const string SqlConnectionString =
             @"Server=.\SQLExpress;Initial Catalog=GeandosBDD; Trusted_Connection=Yes";
-        static int SauvegarderBdd(Sondage sondageASauvegarder)
+
+       
+
+        static int SauvegarderBdd(Questionnaires sondageASauvegarder)
         {
             SqlConnection connexion = new SqlConnection(SqlConnectionString);
             connexion.Open();
 
-            SqlCommand command = new SqlCommand(
+            SqlCommand addSondage = new SqlCommand(
                 @"INSERT INTO Sondage(Titre, Descriptif, ChoixMultiple) VALUES (@titre, @descriptif, @choixMultiple);
                       SELECT SCOPE_IDENTITY()"
                 , connexion);
-            command.Parameters.AddWithValue("@titr", sondageASauvegarder.Titre);
-            command.Parameters.AddWithValue("@descriptif", sondageASauvegarder.Descriptif);
-            command.Parameters.AddWithValue("@choixMultiple", sondageASauvegarder.ChoixMultiple);
-            int idInsere = Convert.ToInt32(command.ExecuteScalar());
+            addSondage.Parameters.AddWithValue("@titr", sondageASauvegarder.Titre);
+            addSondage.Parameters.AddWithValue("@descriptif", sondageASauvegarder.Descriptif);
+            addSondage.Parameters.AddWithValue("@choixMultiple", sondageASauvegarder.ChoixMultiple);
+            addSondage.ExecuteNonQuery();
+     
             connexion.Close();
-            return idInsere;
         }
 
+        public ActionResult CreaSondage()
+        {
+            return View("CreSondage");
+        }
 
+        //New Sondage
+        public ActionResult Sondage(string titre, string descriptif, string reponse1, string reponse2, string reponse3, string reponse4)
+        {
+            Questionnaire = new Questionnaires();
+            NewSondage.Titre = titre;
+            NewSondage.Descriptif = descriptif;
+            NewSondage.VoteUtilisateur = new string[4];
+
+            string[] ReponseUtilisateur = new string[4] { reponse1, reponse2, reponse3, reponse4 };
+            foreach(string InTableau in ReponseUtilisateur)
+            {
+                NewSondage.VoteUtilisateur.Add(InTableau);
+            }
+
+            SauvegarderBdd(NewSondage);
+
+
+            return View();
+
+        }
+        
+
+       
+      
+
+
+        //Select from ReponsPpossible
         static ReponsePossible TryRecupererReponsePossibleEnBDD(int reponseId)
         {
             SqlConnection connexion = new SqlConnection(SqlConnectionString);
