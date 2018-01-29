@@ -1,0 +1,102 @@
+﻿
+@{
+    ViewBag.Title = "CreaSondage";
+}
+
+<!doctype html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Titre de la page</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div id="tete">
+        <br />
+        <br />
+        <div class="droite">
+            <form method="GET" action="#" id="q">
+                <input type="text" name="q" value="Rechercher..." onFocus="if(this.value=='Rechercher...')this.value='';" onBlur="if(this.value=='Rechercher...')this.value='Rechercher...')" />				<input type="submit" value="" />
+                <a>&nbsp;</a><a>   |   </a><a>&nbsp;</a>
+                <a href="index.html"><img alt="Accueil" src="Theme/home.jpg" /></a>
+                <a href="#">S'identifier</a><a>&nbsp;</a><a href="#">S'enregistrer</a>
+
+        </div>
+        <br>
+
+        <div class="menu">
+            <br />
+        </div>
+    </div>
+
+    <div id="conteneur">
+        <div class="center">
+            <label>Minimum 2 réponses </label>
+            <h1>Création du sondage</h1>
+
+            <form action="page3.html">
+                <div>
+                    <div>
+                        <input name="@titre" size="99" type="text" id="add" required="required" placeholder=" Titre du sondage" />
+                    </div>
+                    <br />
+                    <div>
+                        <textarea name="@descriptif" placeholder=" Description ... " rows="6" cols="102"></textarea>
+                    </div>
+                    <br />
+                    <div>
+                        <input name="Reponse1" size="99" type="text" id="add" required="required" placeholder=" Reponse 1" />
+                    </div>
+                    <br />
+                    <div>
+                        <input name="Reponse2" size="99" type="text" id="add" required="required" placeholder=" Reponse 2" />
+                    </div>
+                    <br />
+                    <div>
+                        <input name="Reponse3" size="99" type="text" id="add" required="required" placeholder=" Reponse 3" />
+                    </div>
+                    <br />
+                    <div>
+                        <input name="Reponse4" size="99" type="text" id="add" required="required" placeholder=" Reponse 4" />
+                    </div>
+                    <br />
+                    <div class="gauche">
+
+                        <br />
+                        <div class="gauche">
+                            <input type="radio" name="@choixUnique" value="choixUnique" checked="checked">
+                            <label for="reponse3">Choix unique</label>
+                        </div>
+                        <br />
+                        <div class="gauche">
+                            <input type="radio" name="@choixMultiple" value="choixMultiple">
+                            <label for="reponse4">Choix multiple</label>
+                        </div>
+                        <br />
+
+                        <a href="page3.html"><button type="button" class="boutonValider">Valider</button></a>
+
+                    </div>
+                </div>
+            </form>
+        </div>
+
+
+        <div id="pied">
+            <div class="center">
+                <a href="#">Accueil</a><a>&nbsp;</a><a> | </a>
+                <a href="#">Confidentialité et cookies</a><a> | </a>
+                <a href="#">Conditions générales</a><a>&nbsp;</a><a> | </a>
+                <a href="#">Contact</a><a>&nbsp;</a><a> | </a>
+
+                <a class="droite"><a href="#"> © 2018 - Geandos ADAI 2017 / 2018 CCI Colmar </a></a>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>
+
