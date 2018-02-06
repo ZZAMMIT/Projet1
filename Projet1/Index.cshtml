@@ -1,0 +1,72 @@
+﻿@{
+
+}
+<!doctype html>
+<html lang="fr">
+
+<head>
+	<meta charset="utf-8">
+	<title>Titre de la page</title>
+	<link rel="stylesheet" href="~/Content/style.css">
+	@*<script src="script.js"></script>*@
+	<link rel="stylesheet" href="~/Content/style.css" />
+
+</head>
+<body>
+	<div id="contenu">
+		<div id="tete">
+			<br>
+			<br>
+			<div class="droite">
+				<form method="GET" action="#" id="q">
+					<input type="text" name="q" value="Rechercher..." onFocus="if(this.value=='Rechercher...')this.value='';" onBlur="if(this.value=='Rechercher...')this.value='Rechercher...')" />				<input type="submit" value="" />
+					<a>&nbsp;</a><a>   |   </a><a>&nbsp;</a>
+					<a href="index.html"><img alt="Accueil" src="~/Content/home.jpg" /></a>
+					<a href="#">S'identifier</a><a>&nbsp;</a><a href="#">S'enregistrer</a>
+				</form>
+			</div>
+			<br>
+
+			<div class="menu">
+				<br>
+			</div>
+		</div>
+
+		<div id="conteneurIndex">
+			<div class="center">
+				<br />
+				<br />
+				<br />
+				<br />
+				<br />
+				<br />
+				<br />
+				<br />
+				<br />
+
+				<h1>Bienvenue sur notre site de sondages en ligne</h1>
+				<br>
+				<br>
+				<form method="post" action="~/Accueil/VersCreationSondage">
+
+					<button type="submit">Créer votre sondage ici</button>
+				</form>
+
+				<div id="pied">
+					<div class="center">
+						<a href="#">Accueil</a><a>&nbsp;</a><a> | </a>
+						<a href="#">Confidentialité et cookies</a><a> | </a>
+						<a href="#">Conditions générales</a><a>&nbsp;</a><a> | </a>
+						<a href="#">Contact</a><a>&nbsp;</a><a> | </a>
+
+						<a class="droite"><a href="#"> © 2018 - Geandos ADAI 2017 / 2018 CCI Colmar </a></a>
+					</div>
+
+
+				</div>
+			</div>
+
+		</div>
+	</div>
+</body>
+</html>

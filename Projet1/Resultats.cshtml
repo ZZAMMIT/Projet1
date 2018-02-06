@@ -1,0 +1,96 @@
+﻿@model WebApplication1.Models.ResultatsModel
+<!doctype html>
+<html lang="fr">
+
+<head>
+	<meta charset="utf-8">
+	<title>Titre de la page</title>
+	<link rel="stylesheet" href="style.css">
+	<script src="script.js"></script>
+	<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+	<div id="tete">
+		<br />
+		<br />
+		<div class="droite">
+			<form method="GET" action="#" id="q"/>
+				<input type="text" name="q" value="Rechercher..." onFocus="if(this.value=='Rechercher...')this.value='';" onBlur="if(this.value=='Rechercher...')this.value='Rechercher...')" />				<input type="submit" value="" />
+				<a>&nbsp;</a><a>   |   </a><a>&nbsp;</a>
+				<a href="index.html"><img alt="Accueil" src="Theme/home.jpg" /></a>
+				<a href="#">S'identifier</a><a>&nbsp;</a><a href="#">S'enregistrer</a>
+
+		</div>
+		<br>
+
+		<div class="menu">
+			<br />
+		</div>
+	</div>
+
+	<div id="conteneurIndex">
+		<div class="center">
+
+
+
+			<form>
+				<div>
+					<div>
+						<h2>@Model.Titre</h2>
+					</div>
+					<br />
+					<div>
+						<h3>@Model.Description</h3>
+					</div>
+					<br />
+					<br />
+					<br />
+					<br />
+					<table>
+						<thead>
+							<tr>
+								<th>Réponse</th>
+								<th>Nombre de votes</th>
+								<th>Pourcentage</th>
+							</tr>
+						</thead>
+
+						<tbody>
+
+							<tr>
+								@foreach (var operation in Model.ListeReponses)
+								{
+							<tr>
+								<td>@Model.Reponses</td>
+								<td>@Model.NbVote</td>
+								@*<td>@sondage.pourcent</td>*@
+							</tr>
+								}
+
+							
+						</tbody>
+
+					</table>
+
+
+
+				</div>
+			</form>
+		</div>
+
+
+		<div id="pied">
+			<div class="center">
+				<a href="#">Accueil</a><a>&nbsp;</a><a> | </a>
+				<a href="#">Confidentialité et cookies</a><a> | </a>
+				<a href="#">Conditions générales</a><a>&nbsp;</a><a> | </a>
+				<a href="#">Contact</a><a>&nbsp;</a> | </a>
+				<a class="droite"><a href="#"> © 2018 - Geandos ADAI 2017 / 2018 CCI Colmar </a></a>
+
+			</div>
+
+		</div>
+	</div>
+</body>
+</html>
+
