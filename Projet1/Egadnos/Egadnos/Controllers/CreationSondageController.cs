@@ -19,8 +19,6 @@ namespace Egadnos.Controllers
         private const string SqlConnectionString =
             @"Server=.\SQLExpress;Initial Catalog=GeandosBDD; Trusted_Connection=Yes";
 
-       
-
         static int SauvegarderBdd(Questionnaires sondageASauvegarder)
         {
             SqlConnection connexion = new SqlConnection(SqlConnectionString);
@@ -34,7 +32,7 @@ namespace Egadnos.Controllers
             addSondage.Parameters.AddWithValue("@descriptif", sondageASauvegarder.Descriptif);
             addSondage.Parameters.AddWithValue("@choixMultiple", sondageASauvegarder.ChoixMultiple);
             addSondage.ExecuteNonQuery();
-     
+
             connexion.Close();
         }
 
@@ -43,16 +41,16 @@ namespace Egadnos.Controllers
             return View("CreSondage");
         }
 
-        //New Sondage
+        New Sondage
         public ActionResult Sondage(string titre, string descriptif, string reponse1, string reponse2, string reponse3, string reponse4)
         {
-            Questionnaire = new Questionnaires();
+            Questionnaires = new Questionnaires();
             NewSondage.Titre = titre;
             NewSondage.Descriptif = descriptif;
             NewSondage.VoteUtilisateur = new string[4];
 
             string[] ReponseUtilisateur = new string[4] { reponse1, reponse2, reponse3, reponse4 };
-            foreach(string InTableau in ReponseUtilisateur)
+            foreach (string InTableau in ReponseUtilisateur)
             {
                 NewSondage.VoteUtilisateur.Add(InTableau);
             }
@@ -63,14 +61,37 @@ namespace Egadnos.Controllers
             return View();
 
         }
-        
-
-       
-      
 
 
-        //Select from ReponsPpossible
-        static ReponsePossible TryRecupererReponsePossibleEnBDD(int reponseId)
+        static List<string> RecupererDansBDD()
+
+        {
+            SqlConnection connexion = new SqlConnection(SqlConnectionString);
+            connexion.Open();
+
+            SqlCommand getID = new SqlCommand(
+
+                @"SELECT MAX(IdSondage) FROM Sondage", connexion);
+            int dernierID = (int)getID.ExecuteScalar();
+
+            SqlCommand getBDD = new SqlCommand(
+            @"SELECT IntituleChoix FROM ChoixPossibles WHERE FkIdSondage=@dernierId", connexion);
+            getBDD.Parameters.AddWithValue("@dernierId", dernierID);
+            SqlDataReader reader = getBDD.ExecuteReader();
+            List<string> choixDansBDD = new List<string>();
+
+            while (reader.Read())
+            {
+                choixDansBDD.Add((string)reader["IntituleChoix"]);
+            }
+
+
+
+
+
+
+            //Select from ReponsPpossible
+            static ReponsePossible TryRecupererReponsePossibleEnBDD(int reponseId)
         {
             SqlConnection connexion = new SqlConnection(SqlConnectionString);
             connexion.Open();
